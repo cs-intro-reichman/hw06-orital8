@@ -209,7 +209,7 @@ public class Runigram {
 	 * of the source image.
 	 */
 	public static void morph(Color[][] source, Color[][] target, int n) {
-		if ((source.length != target.length ) ||(source[0].length != target[0].length) ) {
+		if ((source.length != target.length ) ||(source[0].length != target[0].length) ) 
 		target = scaled(target, source[0].length, source.length);
 		Color[][] newImage = new Color[source.length][source[0].length];
 			for (int i = 0; i < n; i++) {
@@ -218,7 +218,6 @@ public class Runigram {
 					display(newImage);
 					StdDraw.pause(500);
 			}
-		}
 	}
 	
 	/** Creates a canvas for the given image. */
